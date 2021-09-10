@@ -83,6 +83,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  React was created by Facebook to help build UIs more efficiently. Instead of having to repeat code, it allows us to create components which can be used an infinite amount of times, and fill them in automatically with unique data.
 1. Describe component state.
+  A component's state is data that the component can use and manipulate.
 1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  Props are like parameters which are used to pass data from a component's state.
+1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?  
+  Side effects are things that affect something outside of a function being executed such as fetching data from an API. To sync effects, you add a dependency array which will set when the effect fires based on changes to the dependencies in the array.
