@@ -23,11 +23,13 @@ const App = () => {
     })
   }, [])
   
-  console.log('test', characterData)
+  
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Character characterData={characterData}/>
+      {characterData.map(character => 
+        <Character character={character}/>
+      )}
     </div>
   );
 }
