@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState} from 'react';
 import './App.css';
 import Character from './components/Character';
+import styled from 'styled-components';
 
 
 const App = () => {
@@ -24,10 +25,13 @@ const App = () => {
     })
   }, [])
   
+  const StyledTitle = styled.div`
+  font-size: 2rem;
+  `
   
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <StyledTitle><h1 className="Header">Characters</h1></StyledTitle>
       {characterData.map(character => 
         <Character character={character}/>
       )}
