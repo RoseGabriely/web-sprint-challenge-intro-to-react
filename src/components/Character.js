@@ -1,5 +1,5 @@
 // Write your Character component here
-import React from "react"
+import Details from "./Details"
 
 export default function Character(props) {
     const { character } = props
@@ -12,6 +12,7 @@ export default function Character(props) {
     return (
         <div className='Character'>
             <h2>{character.name}</h2>
+            <Details character={character} />
         </div>
     )
 }
